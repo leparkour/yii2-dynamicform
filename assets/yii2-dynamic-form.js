@@ -79,7 +79,7 @@
 
                 $(this).prop('checked', false);
             } else if($(this).is('select')) {
-                // $(this).find('option:selected').removeAttr("selected");
+                $(this).find('option:selected').removeAttr("selected");
             } else {
                 $(this).val('');
             }
